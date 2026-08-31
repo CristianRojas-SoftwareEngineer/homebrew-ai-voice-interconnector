@@ -1,10 +1,10 @@
 cask "ai-voice-interconnector" do
-  version "0.18.8"
-  sha256 "7b9701257cac8bc30434d3556ab81c0248bd7d01bdb2dcea98a4f588e3a31777"
+  version "0.18.9"
+  sha256 "5d53bfffb5071103a30ed1cddf3e1dd5753b39fb931d560de7071f8fda760700"
 
   url "https://github.com/CristianRojas-SoftwareEngineer/AI-Voice-InterConnector/releases/download/v#{version}/ai-voice-interconnector-#{version}-arm64-macos.tar.gz"
   name "AI Voice InterConnector"
-  desc "Motor de sintesis de voz (TTS) offline con clonacion de voz en espanol latinoamericano"
+  desc "Motor de síntesis de voz (TTS) offline con clonación de voz en español latinoamericano"
   homepage "https://github.com/CristianRojas-SoftwareEngineer/AI-Voice-InterConnector"
 
   livecheck do
@@ -12,14 +12,18 @@ cask "ai-voice-interconnector" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :big_sur"
+  depends_on macos: ">= :ventura"
 
   binary "ai-voice-interconnector"
 
   zap trash: [
     "~/Library/Application Support/ai-voice-interconnector",
-    "~/.cache/huggingface/hub/models--ResembleAI--Chatterbox-Multilingual-es-mx-latam",
-    "~/.cache/huggingface/hub/models--ResembleAI--chatterbox",
+    "~/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-0.6B-CustomVoice",
+    "~/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-0.6B-Base",
+    "~/.cache/huggingface/hub/models--istupakov--parakeet-tdt-0.6b-v3-onnx",
+    "~/.cache/huggingface/hub/models--Helsinki-NLP--opus-mt-es-en",
+    "~/.cache/huggingface/hub/models--Helsinki-NLP--opus-mt-en-es",
+    "~/.cache/huggingface/xet",
   ]
 
   caveats <<~EOS
