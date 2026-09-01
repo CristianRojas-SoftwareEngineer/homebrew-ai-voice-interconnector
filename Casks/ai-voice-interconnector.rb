@@ -1,6 +1,6 @@
 cask "ai-voice-interconnector" do
-  version "0.18.23"
-  sha256 "88b80f7bb5e76fd0f73d0216b5dc6a414cca3c5892b20a8ff1359839113230f7"
+  version "0.18.24"
+  sha256 "aa2205ae217b4a4af172cd54ce56fac5fb568d0f4f3b2ee3c5537f415658dbb7"
 
   url "https://github.com/CristianRojas-SoftwareEngineer/AI-Voice-InterConnector/releases/download/v#{version}/ai-voice-interconnector-#{version}-arm64-macos.tar.gz"
   name "AI Voice InterConnector"
