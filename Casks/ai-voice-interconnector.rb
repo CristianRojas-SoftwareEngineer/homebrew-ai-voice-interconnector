@@ -1,6 +1,6 @@
 cask "ai-voice-interconnector" do
-  version "0.23.1"
-  sha256 "8bb33428df07cb8169e1eae52ab8484b1f304d449c25ccba8cff9aebb8dc179c"
+  version "0.24.0"
+  sha256 "6dc131ece6798c8ca385390f0db5c48bacc3ace1494259916e0427c09c722417"
 
   url "https://github.com/CristianRojas-SoftwareEngineer/AI-Voice-InterConnector/releases/download/v#{version}/ai-voice-interconnector-#{version}-arm64-macos.tar.gz"
   name "AI Voice InterConnector"
@@ -17,13 +17,14 @@ cask "ai-voice-interconnector" do
   binary "ai-voice-interconnector"
 
   zap trash: [
+    "~/Library/Caches/ai-voice-interconnector/models",
     "~/Library/Application Support/ai-voice-interconnector",
     "~/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-0.6B-CustomVoice",
-    "~/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-0.6B-Base",
-    "~/.cache/huggingface/hub/models--istupakov--parakeet-tdt-0.6b-v3-onnx",
     "~/.cache/huggingface/hub/models--Helsinki-NLP--opus-mt-es-en",
     "~/.cache/huggingface/hub/models--Helsinki-NLP--opus-mt-en-es",
-    "~/.cache/huggingface/xet",
+    "~/.cache/huggingface/hub/models--istupakov--parakeet-tdt-0.6b-v3-onnx",
+    "~/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-0.6B-Base",
+    "~/.cache/huggingface/hub/ct2",
   ]
 
   caveats <<~EOS
