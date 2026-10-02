@@ -1,6 +1,6 @@
 cask "ai-voice-interconnector" do
-  version "0.26.0"
-  sha256 "314766744ff4300e214522edbb2f1318212688239508db728d0f28476617b870"
+  version "0.27.0"
+  sha256 "c5e50c035986f1427e4f83e80bb6bc80c430f684c829f16e33eaeed836056a8f"
 
   url "https://github.com/CristianRojas-SoftwareEngineer/AI-Voice-InterConnector/releases/download/v#{version}/ai-voice-interconnector-#{version}-arm64-macos.tar.gz"
   name "AI Voice InterConnector"
@@ -20,15 +20,14 @@ cask "ai-voice-interconnector" do
     "~/Library/Caches/ai-voice-interconnector/models",
     "~/Library/Application Support/ai-voice-interconnector",
     "~/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-0.6B-CustomVoice",
-    "~/.cache/huggingface/hub/models--Helsinki-NLP--opus-mt-es-en",
-    "~/.cache/huggingface/hub/models--Helsinki-NLP--opus-mt-en-es",
+    "~/.cache/huggingface/hub/models--CristianRojaas--opus-mt-es-en-ct2-int8",
+    "~/.cache/huggingface/hub/models--CristianRojaas--opus-mt-en-es-ct2-int8",
     "~/.cache/huggingface/hub/models--istupakov--parakeet-tdt-0.6b-v3-onnx",
     "~/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-0.6B-Base",
-    "~/.cache/huggingface/hub/ct2",
   ]
 
   caveats <<~EOS
-    Los modelos de voz (traduccion, sintesis y transcripcion; unos 4.7 GB, o 7.3 GB con
+    Los modelos de voz (traduccion, sintesis y transcripcion; unos 3.3 GB, o 5.85 GB con
     clonado de voz) no vienen incluidos:
     descargalos una sola vez con:
       ai-voice-interconnector setup
