@@ -1,6 +1,6 @@
 cask "ai-voice-interconnector" do
-  version "0.29.5"
-  sha256 "b21f864df50c2879c85b647ae0f3d7ae8bdff84f1fb3dccf1346ca8f653803be"
+  version "0.30.0"
+  sha256 "fb3b0e62934e7fe23a47264a32bd0bb46173b9dd6b23ef5ab41255717ae569fc"
 
   url "https://github.com/CristianRojas-SoftwareEngineer/AI-Voice-InterConnector/releases/download/v#{version}/ai-voice-interconnector-#{version}-arm64-macos.tar.gz"
   name "AI Voice InterConnector"
@@ -32,8 +32,9 @@ cask "ai-voice-interconnector" do
     descargalos una sola vez con:
       ai-voice-interconnector setup
 
-    Licencia: GPL-3.0-or-later. La oferta de codigo fuente (GPLv3 seccion 6)
-    y las atribuciones de terceros viajan dentro del archivo instalado:
+    Licencia: MPL-2.0. El aviso de disponibilidad del codigo fuente (MPL-2.0
+    seccion 3.2) y las atribuciones de terceros viajan dentro del archivo
+    instalado:
       #{staged_path}/SOURCE-OFFER.md
       #{staged_path}/THIRD-PARTY-LICENSES.md
   EOS
