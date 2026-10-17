@@ -1,6 +1,6 @@
 cask "ai-voice-interconnector" do
-  version "0.31.2"
-  sha256 "239828bd42a35edafc5e0cdfed2d890fd6f0d75f493b9a121eb7da0dccafb51b"
+  version "0.32.0"
+  sha256 "e8eb6195393da824134bdd79bd9496c04fbe20f37499d7035b1f6f088a54cd90"
 
   url "https://github.com/CristianRojas-SoftwareEngineer/AI-Voice-InterConnector/releases/download/v#{version}/ai-voice-interconnector-#{version}-arm64-macos.tar.gz"
   name "AI Voice InterConnector"
@@ -27,7 +27,7 @@ cask "ai-voice-interconnector" do
   ]
 
   caveats <<~EOS
-    Los modelos de voz (traduccion, sintesis, clonado de voz y transcripcion; unos 5.85 GB)
+    Los modelos de voz (traduccion, sintesis, clonado de voz y transcripcion; unos 5,85 GB)
     no vienen incluidos:
     descargalos una sola vez con:
       ai-voice-interconnector setup
