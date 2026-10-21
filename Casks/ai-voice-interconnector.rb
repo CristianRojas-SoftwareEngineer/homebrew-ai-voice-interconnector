@@ -1,9 +1,9 @@
 cask "ai-voice-interconnector" do
-  version "0.35.0"
-  sha256 "412df3b42a94037281cca1361c05742c0cdc32fd247f0a751260f6a21efc5242"
+  version "0.36.0"
+  sha256 "e7a9d895ba7b9bf7a730b0f27aaed2d4be2a38a4ab9eebfa05051237a442abca"
 
   url "https://github.com/CristianRojas-SoftwareEngineer/AI-Voice-InterConnector/releases/download/v#{version}/ai-voice-interconnector-#{version}-arm64-macos.tar.gz"
-  name "AI Voice InterConnector"
+  name "AI Voice-InterConnector"
   desc "Motor de síntesis de voz (TTS) offline con clonación de voz en español latinoamericano"
   homepage "https://github.com/CristianRojas-SoftwareEngineer/AI-Voice-InterConnector"
 
