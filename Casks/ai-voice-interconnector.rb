@@ -1,6 +1,6 @@
 cask "ai-voice-interconnector" do
-  version "0.36.2"
-  sha256 "b8c1b7bb2e45ac4d450f40bfcc23ce183ae917eae466c740799fa5a7f4f3129d"
+  version "0.37.0"
+  sha256 "07635a01bac6d0d9f384d4523d66fc0a68627d97e9de3a8646e7236accca82a4"
 
   url "https://github.com/CristianRojas-SoftwareEngineer/AI-Voice-InterConnector/releases/download/v#{version}/ai-voice-interconnector-#{version}-arm64-macos.tar.gz"
   name "AI Voice-InterConnector"
@@ -23,6 +23,7 @@ cask "ai-voice-interconnector" do
     "~/.cache/huggingface/hub/models--CristianRojaas--opus-mt-es-en-ct2-int8",
     "~/.cache/huggingface/hub/models--CristianRojaas--opus-mt-en-es-ct2-int8",
     "~/.cache/huggingface/hub/models--istupakov--parakeet-tdt-0.6b-v3-onnx",
+    "~/.cache/huggingface/hub/models--Ceva-IP--DPDFNet",
     "~/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-0.6B-Base",
   ]
 
