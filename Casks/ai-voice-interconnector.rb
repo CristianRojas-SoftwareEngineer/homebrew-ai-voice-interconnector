@@ -1,6 +1,6 @@
 cask "ai-voice-interconnector" do
-  version "0.45.2"
-  sha256 "7d3777114689d38961fe40e377c57c40ba942a331e35fe34685a2b3344a36013"
+  version "0.46.0"
+  sha256 "14dfac43affb9a01d26d23ec0f660efbbba3c254925d48b79d7d297f659791b1"
 
   url "https://github.com/CristianRojas-SoftwareEngineer/AI-Voice-InterConnector/releases/download/v#{version}/ai-voice-interconnector-#{version}-arm64-macos.tar.gz"
   name "AI Voice-InterConnector"
@@ -19,7 +19,6 @@ cask "ai-voice-interconnector" do
   zap trash: [
     "~/Library/Caches/ai-voice-interconnector/models",
     "~/Library/Application Support/ai-voice-interconnector",
-    "~/.cache/huggingface/hub/models--Qwen--Qwen3-TTS-12Hz-0.6B-CustomVoice",
     "~/.cache/huggingface/hub/models--CristianRojaas--opus-mt-es-en-ct2-int8",
     "~/.cache/huggingface/hub/models--CristianRojaas--opus-mt-en-es-ct2-int8",
     "~/.cache/huggingface/hub/models--istupakov--parakeet-tdt-0.6b-v3-onnx",
@@ -28,7 +27,7 @@ cask "ai-voice-interconnector" do
   ]
 
   caveats <<~EOS
-    Los modelos de voz (traduccion, sintesis, clonado de voz y transcripcion; unos 5,85 GB)
+    Los modelos de voz (traduccion, sintesis, clonado de voz y transcripcion; unos 3,37 GB)
     no vienen incluidos:
     descargalos una sola vez con:
       ai-voice-interconnector setup
